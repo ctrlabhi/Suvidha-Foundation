@@ -327,16 +327,6 @@ header{
     color: white; /* Set text color */
 }
 
-
-
-/* team-members */
-.team-members{
-   width: 1280px;
-   height: 910px;
-    /* border: 1px solid black; */
-
-}
-
 /* our-team-section */
 .our-team-section{
     height: 1084px;
@@ -355,6 +345,57 @@ header{
 .team-intro{
     text-align: center;
     color: #525560;
+    opacity: 60%;
+    margin-bottom: 2%;
+}
+
+/* team-members */
+.team-members{
+    width: 1280px;
+    height: 922px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    /* column-gap: 15%; */
+    row-gap: 6%;
+ }
+
+ /* team-member */
+.team-member{
+    height: 431px;
+    width: 296px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.team-member img{
+    height: 320px;
+    width: 296px;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+}
+
+.position{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    opacity: 60%;
+    text-align: center;
+}
+
+.social-row{
+    font-size: 20px;
+    text-align: center;
 }
 
 /* cta */
