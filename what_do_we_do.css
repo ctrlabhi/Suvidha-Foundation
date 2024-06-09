@@ -4,21 +4,18 @@
     font-family: "Roboto", sans-serif;
 }
 
-body{
-    zoom:80%;
-}
-
 a{
     text-decoration: none;
     color: black;
 }
 
-
+ /* navbar */
 .top-nav{
     position: fixed;
     top: 0;
     z-index: 99;
     width: 100%;
+    zoom: 80%;
 }
 
 .info{
@@ -66,63 +63,25 @@ nav{
     color: #898989;
 }
 
-
-.banner-area{
-    width: 100%;
-    height: 735px;
-    object-fit: cover;
-}
-
-.header-text{
-    height: 430px;
-    width: 640px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    top: 30%;
-}
-
-.header-text div{
-   display: flex;
-   justify-content: flex-start;
-}
-
-.header-text p{
-    height: 231px;
-    width: 640px;
-    font-size: 64px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.aboutSection{
-    height:724.36px;
+/* header */
+header{
+    height: 384px;
     width: 1280px;
     /* border: 1px solid black; */
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.about-container{
-    margin-top: 40px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .justified-text{
-    color: #525560;
-    font-size: 18px;
+    color: #1D2130;
+    font-size: 16px;
     line-height: 160%;
+    width: 562px;
+    text-align: justify;
+    opacity: 60%;
 }
 
-.top-row{
-    display: flex;
-    justify-content: center;
-}
-
-.bottom-row{
-    margin-left: 100px;
-}
 
 .line-after {
     position: relative;
@@ -136,80 +95,86 @@ nav{
     transform: translateY(-50%);
     width: 730%;
     height: 1px;
-    background-color: #E5E5E5;
+    background-color: #c7c5c5;
     margin-left: 20px;
+}
+
+.image{
+    height: 384px;
+    width: 476px;
+}
+
+.image img{
+    height: 384px;
+    width: 476px;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.image img:hover{
+    opacity: 0.6;
 }
 
 
 .about{
-    width: 550px;
     margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-video{
-    margin-left: 80px;
-    height: 578px;
-    width: 480px;
-    border-radius: 10px;
-}
-
-.upes{
-    height: 120px;
-    margin-left: 180px;
-    margin-top: -30px;
-}
-
-.op-jindal{
-    height: 50px;
-    margin-left: 40px;
-    margin-top: -25px;
-}
-
-.whatDoWeDo{
-    height: 950px;
-    background-color: #FFEBB9;
+.left-col{
     display: flex;
     justify-content: space-around;
-    padding: 50px;
 }
 
-.sustain{
-    margin-left: 60px;
+/* we do */
+.weDo{
+    height:574px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 5%;
+    background-color:  #FFEBB9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
-.healthy-food{
-    margin-left: 50px;
+.weDo .title{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 120%;
+    padding-bottom: 4%;
 }
 
 .food{
     height: 30px;
     width: 30px;
     border-radius: 5px;
+    margin-right: 6%;
 }
 
-.food-title{
-    display: flex;
+.feature-title{
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.healthy-food p{
+.feature-info{
+    font-size: 14px;
+    line-height: 160%;
+    color: #525560;
     margin-left: 55px;
 }
 
-.card-sustain{
-    height: 658px;
-    width: 480px;
-    border-radius: 20px;
-    margin-top: 150px;
-    margin-left: -250px;
-    object-fit: cover;
-    opacity: 0.8;
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 8%;
+    column-gap: 4%;
 }
-
-.what-desc{
-    width: 700px;
-    margin-left: 100px;
-}
-
 
 /* projects */
 .projects{
@@ -219,6 +184,7 @@ video{
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
+    zoom: 80%;
 }
 
 .charity{
@@ -250,13 +216,13 @@ video{
     opacity: 0.4;
 }
 
- .project img, .image {
-    transition: transform .5s, filter 1.5s ease-in-out;
-  }
-  
-  .project:hover img{
-    transform: scale(1.1);
-  }
+.project img, .image {
+transition: transform .5s, filter 1.5s ease-in-out;
+}
+
+.project:hover img{
+transform: scale(1.1);
+}
 
 .statsSection{
     height:600px;
@@ -280,8 +246,6 @@ video{
     margin:auto;
 }
 
-
-
 .statsSection p{
     color: rgb(153,153,153);
 }
@@ -291,6 +255,7 @@ video{
     flex-direction: column;
 }
 
+/* cta */
 .cta{
     height: 384px;
     width: 1280px;
@@ -299,6 +264,7 @@ video{
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 60px;
+    zoom: 80%;
 }
 
 .volunteer{
@@ -330,79 +296,53 @@ video{
     margin-top: 80px;
 }
 
-.connectionSection{
-    height: 225px;
-    width: 1280px;
-    border: none;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    
+/* footer */
+footer{
+    zoom: 80%;
 }
-
-.connection{
-    height: 225px;
-    width: 1280px;
-    object-fit: cover;
-    border-radius: 20px;
-    background-color: white;
-    border: none;
-}
-
-.country{
-    height: 60px;
-    width: 60px;
-}
-
-.conn-list{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .box{
-   height: 200px;
-   width: 200px;
-   border-radius: 50%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   background-color: rgb(235,202,98);
-   padding: 15px;
-}
-
-.box:hover{
-    background-color: rgba(235, 203, 98, 0.844);
-}
-
-.contact-logo{
-    display: flex;
-    column-gap: 1rem;
-    justify-content: center;
-}
-
-.logo-box{
-    display: flex;
-    background-color: #292929;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    height: 48px;
-    width: 48px;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-box svg{
     display: flex;
-    height: 24px;
-    width: 24px;
-}
-
-
-
-.logo-box:hover{
-    background-color: rgba(77, 77, 77, 255);
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235,202,98);
+    padding: 15px;
+ }
+ 
+ .box:hover{
+     background-color: rgba(235, 203, 98, 0.844);
+ }
+ 
+ .contact-logo{
+     display: flex;
+     column-gap: 1rem;
+     justify-content: center;
+ }
+ 
+ .logo-box{
+     display: flex;
+     background-color: #292929;
+     border-radius: 50%;
+     height: 48px;
+     width: 48px;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .logo-box svg{
+     display: flex;
+     height: 24px;
+     width: 24px;
+ }
+ 
+ 
+ 
+ .logo-box:hover{
+     background-color: rgba(77, 77, 77, 255);
+ }
 
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
 .testimonial2 {
@@ -510,3 +450,4 @@ video{
     justify-content: center;
     margin-top: 100px;
 }
+
